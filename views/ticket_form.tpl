@@ -5,9 +5,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <div id="ticket_form">
-<div class="title">SEND US A MESSAGE:
-    <p>Someone from our team will be in touch within 1-2 business days</p>
-</div>
 <form action="create_ticket" method="post">
     <div class="form-group">
             <label for="name">Name</label>
