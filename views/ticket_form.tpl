@@ -37,7 +37,7 @@
             </textarea>
     </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
 
 </form>
 </div>
