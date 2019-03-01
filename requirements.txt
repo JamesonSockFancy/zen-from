@@ -1,0 +1,3 @@
+bottle==0.12.16
+requests==2.21.0
+sendgrid==5.6

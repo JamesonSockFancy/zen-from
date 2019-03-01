@@ -1,4 +1,3 @@
-import json
 import requests
 from bottle import route, template, run, static_file, request
 import sendgrid
@@ -34,7 +33,10 @@ def send_css(filename):
 
 
 
-run(host='localhost', port=8080, debug=True)
+if os.environ.get('APP_LOCATION') == 'heroku':
+    run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+else:
+    run(host='localhost', port=8080, debug=True)
 
 
 # @route('/create_ticket', method=['GET', 'POST'])
