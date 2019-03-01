@@ -2,7 +2,7 @@
     font-family: Verdana, Helvetica, sans-serif;
     font-size: 10pt;
     color: dimgray;
-    width: 240px;
+    width: 440px;
     border: 1px solid lightgray;
     padding: 0 8px;
 }
@@ -13,14 +13,18 @@
     padding: 12px 0 0;
 }
 
-form ul {
+label {
+    font-weight: 800;
+}
+
+/* form ul {
     list-style-type: none;
     padding-left: 0;
 }
 
 form li {
     margin: 0 0 6px 0;
-}
+} */
 
 textarea {
     vertical-align: top;
@@ -29,4 +33,4 @@ textarea {
 
 .field {
     width: 100%;
-}
+} 
