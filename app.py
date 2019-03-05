@@ -17,7 +17,7 @@ def handle_form():
         sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
         from_email = Email("info@sockfancy.com")
         to_email = Email(email)
-        subject = subject1
+        subject = "xContactx form submission " + subject1
         content = Content("text/plain", description)
         mail = Mail(to_email, subject, from_email, content)
         response = sg.client.mail.send.post(request_body=mail.get())
