@@ -18,7 +18,7 @@ def handle_form():
         from_email = Email("info@sockfancy.com")
         to_email = Email(email)
         subject = "xContactx us form submission"
-        content = Content("text/plain", "name: " + name + "subject1: " + subject1 + "message: " + description + "order number: " + order)
+        content = Content("text/plain", "NAME: " + name + " SUBJECT: " + subject1 + " MESSAGE: " + description + " ORDER NUMBER: " + order)
         mail = Mail(to_email, subject, from_email, content)
         response = sg.client.mail.send.post(request_body=mail.get())
         print(response.status_code)
